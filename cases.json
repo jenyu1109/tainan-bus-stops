@@ -1,0 +1,233 @@
+{
+  "categories": [
+    {
+      "id": "nature",
+      "name": "自然地景型",
+      "color": "#5b8c5a",
+      "intro": "以自然元素作為設計母題,讓候車亭模擬樹林、葉片、水生植物等自然形態,或順應地形與綠帶生長。結構不只是遮蔽,更像把一小片自然帶進街道,讓等車成為親近自然的片刻。",
+      "cases": [
+        {
+          "name": "交通大學候車亭",
+          "architect": "CHU STUDIO 竹工凡木設計研究室",
+          "location": "新竹, 台灣",
+          "year": 2020,
+          "elements": "交錯排列的細鋼柱模擬榕樹的氣生根;鋼、木、混凝土;處理基地高差,串連校園內外動線;頂棚如疏密有致的林冠。",
+          "concept": "位於交大南門的重要交通節點。設計以「人造森林」為核心意象,讓密集而交錯的鋼柱如榕樹根系般撐起頂棚,使候車亭與周邊既有的樹林彼此滲透、共生。光線透過頂棚灑落,行人穿行其間如走入林下,等車的時光因此被賦予自然的氣息,也呼應校園以減法美學進行的整體更新。",
+          "url": "https://www.archdaily.com/947046/the-bus-stop-of-nctu-chu-studio",
+          "img": "https://images.adsttc.com/media/images/5f51/0e22/b357/6574/5200/0009/medium_jpg/%E4%BA%A4%E5%A4%A7%E5%80%99%E8%BB%8A%E4%BA%AD_10__Ivan_chuang.jpg?1599147544"
+        },
+        {
+          "name": "University Boulevard 候車亭",
+          "architect": "PUBLIC Architecture + Communication",
+          "location": "溫哥華, 加拿大",
+          "year": 2013,
+          "elements": "細鋼柱錯落排列,撐起大尺度蜂巢狀木構頂棚並覆以玻璃;單一五邊形模組旋轉、翻轉拼接;柱子兼作落水管,座椅與地圖架整合於柱距之間。",
+          "concept": "設計把候車亭視為鄰近一排桂樹(Katsura)的概念性延伸。遠看時,玻璃反射並填補了樹列之間的縫隙;走近時,木構才顯現,行人彷彿走在枝葉之下。五邊形模組既規則又隨機的排列,刻意營造出自然界中那種「規律與偶然並存」的視覺平衡,讓人工結構與行道樹融為一體。",
+          "url": "https://www.archdaily.com/467703/university-boulevard-transit-shelters-public-architecture-communication",
+          "img": "https://images.adsttc.com/media/images/52d4/cdfa/e8e4/4ef8/bf00/0070/medium_jpg/PORTADA.jpg?1389678062"
+        },
+        {
+          "name": "小豆島 水蓮葉公車亭",
+          "architect": "Tato Architects(島田陽)",
+          "location": "小豆島, 日本",
+          "year": 2014,
+          "elements": "約 90 片由 6mm 鋼板製成、塗環保隔熱塗層的圓盤,由 48 根細柱支撐;每片圓盤依坡地角度微調傾斜,可作座椅、桌面或遮陽。",
+          "concept": "基地位於大型觀音菩薩立像腳下的緩坡。建築師讓一系列相連的圓盤漂浮於同一水平面上,宛如蓮花池上的片片蓮葉。曲線在單一平面上流動,如同日本屏風畫中作為視覺母題的金色雲朵,被引入真實的地景之中。候車的人可依需求把圓盤當椅、當桌或當遮陽,讓等車成為棲息於自然意象中的體驗。",
+          "url": "https://www.thisispaper.com/mag/bus-stop-shodoshima-tato-architects",
+          "img": "https://cdn.prod.website-files.com/5d70caf362d15d860bedae09/63ef4b76add38bb90ea0cf4b_thisispaper-bus-stop-shodoshima-tato-architects-14.webp"
+        },
+        {
+          "name": "Palafolls 公車亭",
+          "architect": "MIAS Architects(Josep Miàs)",
+          "location": "帕拉佛斯, 西班牙",
+          "year": 2018,
+          "elements": "主結構為兩道交叉成十字的鋼樑;木與鋼;一系列玻璃「窗」散落於基地各處,如被風吹散後自然落定。",
+          "concept": "候車亭座落於鄉野與村落交界之處。設計把一片片窗扇散置在場地上,彷彿被風吹動而隨機停駐,以一種自發、無拘的姿態形成遮蔽。它不以單一封閉量體界定空間,而是讓結構與周邊的田野、風與光自由對話,使等車空間像是自然生長於地景中的一部分。",
+          "url": "https://www.archdaily.com/909990/palafolls-bus-stop-mias-architects",
+          "img": "https://images.adsttc.com/media/images/5c47/b123/284d/d1e4/e700/0245/medium_jpg/GDR_2018_MIAS_PALAFOLLS_02.jpg?1548202269"
+        },
+        {
+          "name": "Lotus 生態候車亭",
+          "architect": "100architects",
+          "location": "上海, 中國",
+          "year": 2019,
+          "elements": "以蓮葉為造型的圓形遮陽頂棚;結合綠化植栽與生態元素;明亮色彩與柔和曲線。",
+          "concept": "以蓮葉漂浮水面的意象設計圓形頂棚,把自然的柔軟曲線與綠意帶入都市街角。候車亭不只是遮陽避雨的設施,更被當作一處微型的生態與休憩節點,以親切的造型與植栽軟化城市的硬質介面,鼓勵人們停留。",
+          "url": "https://100architects.com/project/lotus-eco-bus-stop/",
+          "img": "https://100architects.com/wp-content/uploads/2020/03/17-2-1024x576.jpg"
+        }
+      ]
+    },
+    {
+      "id": "landmark",
+      "name": "文化地標型",
+      "color": "#c1574b",
+      "intro": "以歷史保存、在地匠藝與聚落紋理為主題。候車亭或車站不追求新奇造型,而是延續既有的歷史結構、運用在地材料與工匠技藝,或回應地方的文化脈絡,讓交通設施成為承載集體記憶與地方認同的載體。",
+      "cases": [
+        {
+          "name": "Zvonařka 中央巴士總站",
+          "architect": "CHYBIK + KRISTOF",
+          "location": "布爾諾, 捷克",
+          "year": 2021,
+          "elements": "保留並修復既有的粗獷主義(Brutalist)混凝土結構;以透明性與可及性重整動線;維持原有建築識別。",
+          "concept": "這是建築師自 2011 年自發啟動的改造與修復計畫。他們選擇保存原有的粗獷主義結構與其建築識別,而非拆除重建,藉此延續城市的建築遺產。設計強調這座車站在城市與區域社會文化網絡中的核心地位,以透明與開放重整一座逐漸衰敗的交通樞紐,讓它成為回應當代社會需求的公共空間,也體現建築作為社會正向改變媒介的責任。",
+          "url": "https://www.archdaily.com/961268/zvonarka-central-bus-terminal-chybik-plus-kristof",
+          "img": "https://images.adsttc.com/media/images/6094/530f/f91c/81c3/0900/01cf/medium_jpg/Zvonarka_-_Chybik_Kristof_-_photo_by_alex_shoots_buildings-2.jpg?1620333314"
+        },
+        {
+          "name": "Krumbach BUS:STOP 計畫(在地匠藝)",
+          "architect": "vai Vorarlberger Architektur Institut 策劃",
+          "location": "克魯姆巴赫, 奧地利",
+          "year": 2014,
+          "elements": "七座候車亭由國際建築師與在地建築師、工匠合作;大量使用當地木材與傳統工藝;由超過 200 位在地居民參與支持。",
+          "concept": "在僅約千人的小村,策劃單位邀請國際知名建築師與在地工匠協作,以當地材料與傳統匠藝打造七座候車亭。計畫的關鍵不在明星建築,而在於「在地匠藝與聚落紋理」的連結——超過 200 人投入,讓基礎設施、移動性與鄉村文化緊密縫合,把一座小村莊放上世界地圖,展現公共建設如何承載地方認同。",
+          "url": "https://www.archdaily.com/506961/bus-stop-unveils-7-unusual-bus-shelters-by-world-class-architects",
+          "img": "https://images.adsttc.com/media/images/5374/a2be/c07a/8010/2500/00a2/medium_jpg/_DSC6985.jpg?1400152748"
+        },
+        {
+          "name": "KNG 公車站",
+          "architect": "A+D Architectural Design & Constructions",
+          "location": "富美, 越南",
+          "year": 2018,
+          "elements": "以在地開採的福和石材(Phuoc Hoa Stone)砌築、搭配混凝土;結合綠化植栽與售票窗口;把原本僅一根立桿的站位升級為有遮蔽的候車空間。",
+          "concept": "設計以服務社區為最優先,把原本只是一根站桿的公車站,升級為有遮蔽、有綠意的候車空間,並為西貢—頭頓路線增設售票窗口。建築運用在地開採的福和石材砌築,讓這座小站帶著土地的材質感與社區的溫度,是從在地材料與社區實際需求出發、貼近聚落生活的務實之作。",
+          "url": "https://www.archdaily.com/926746/kng-bus-station-a-plus-d-architectural-design-and-constructions",
+          "img": "https://images.adsttc.com/media/images/5da8/cf2c/3312/fdd7/5f00/06b6/medium_jpg/2.jpg?1571344122"
+        },
+        {
+          "name": "Casar de Cáceres 公車站",
+          "architect": "Justo García Rubio",
+          "location": "卡薩爾-德卡塞雷斯, 西班牙",
+          "year": 2004,
+          "elements": "場鑄白色混凝土摺板,捲曲成兩個環圈;大環圈作為候車雨棚與月台,小環圈為服務/吧台空間;以殼體幾何本身取得結構穩定。",
+          "concept": "建築師以一條捲曲的白色混凝土帶,折出兩個環,把一座小鎮的長途客運站化為地方的現代地標。摺殼把混凝土的結構可能性推向極致,巨大的環圈既是迎接巴士的雨棚,也成為小鎮對外的識別意象,讓一座僅約萬人的小鎮因這座車站而被記住——是交通建築作為地方文化象徵的代表。",
+          "url": "https://arquitecturaviva.com/works/estacion-de-autobuses-6",
+          "img": "https://www.arch2o.com/wp-content/uploads/2012/10/Arch2O-bus-station-casar-de-caceres-justo-garcia-rubio-10.jpg"
+        }
+      ]
+    },
+    {
+      "id": "sustainable",
+      "name": "永續生態型",
+      "color": "#4a8fa5",
+      "intro": "以環境永續為核心:綠屋頂、太陽能、低碳與可循環材料、生物友善設計。讓候車亭不只是遮蔽,更是城市生態、雨水滯蓄與低碳運輸網絡的一環。",
+      "cases": [
+        {
+          "name": "Utrecht 蜜蜂友善公車亭",
+          "architect": "Utrecht 市政府",
+          "location": "烏特勒支, 荷蘭",
+          "year": 2019,
+          "elements": "316 座景天科(sedum)綠屋頂候車亭;其中 96 座加裝太陽能板;全面 LED 照明;竹製座椅。",
+          "concept": "作為烏特勒支邁向 2050 年「全面循環城市」目標的一環,市府把全市候車亭頂部鋪上景天科植被。綠屋頂在夜間吸收二氧化碳、協助雨水滯蓄與降溫,並為蜜蜂等授粉昆蟲提供棲地;太陽能板供應照明用電,竹製座椅則選用可再生材料。一個日常的候車亭,被轉化為同時服務市民與都市生態的綠色基礎設施。",
+          "url": "https://www.archdaily.com/921850/utrecht-creates-300-bee-friendly-bus-stops",
+          "img": "https://images.adsttc.com/media/images/5d3a/f3f5/284d/d1af/2200/003c/medium_jpg/MG_0765-%C2%A9-Barbra-Verbij-20x30cm-2.jpg?1564144615"
+        },
+        {
+          "name": "Marengo 多模式轉運中心",
+          "architect": "BIG + A+Architecture",
+          "location": "土魯斯, 法國",
+          "year": 2025,
+          "elements": "大量木構造(mass timber)與低碳混凝土;單一屋頂下整合公車、鐵路與地鐵轉乘;順應環境的永續介入。",
+          "concept": "為擴充土魯斯中央車站機能而設計的轉運樞紐,把公車、鐵路與地鐵整合在同一片屋頂之下。設計以大量木構與低碳混凝土取代高碳排材料,打造一個適應環境、低碳排的永續介入,示範大型交通建築如何在尺度與工程之外,同時承擔氣候責任。",
+          "url": "https://www.archdaily.com/tag/bus-station",
+          "img": "https://images.adsttc.com/media/images/6601/4d8e/b626/e848/b84f/4aa8/medium_jpg/big-and-a-plus-architects-reveal-design-for-mass-timber-transport-hub-in-france_4.jpg?1711361477"
+        },
+        {
+          "name": "Tilburg 公車站",
+          "architect": "cepezed",
+          "location": "蒂爾堡, 荷蘭",
+          "year": 2019,
+          "elements": "輕量鋼構、預製與可拆解(demountable)設計;通透的薄頂棚;構件可重複使用,呼應循環經濟。",
+          "concept": "以「可拆解、可重複使用」為核心,整座車站的構件都能被拆下、搬移、再組裝,把循環經濟的概念落實到交通建築。輕量而通透的頂棚在提供氣候遮蔽的同時,保持都市視覺的穿透性,讓車站既環保又不阻斷城市的開放感。",
+          "url": "https://www.archdaily.com/926342/bus-station-tilburg-architectenbureau-cepezed",
+          "img": "https://images.adsttc.com/media/images/5d9f/bac1/284d/d107/7900/013f/medium_jpg/feature_-_cepezed_bus_station_Tilburg_lucas_van_der_wee_01.jpg?1570749095"
+        },
+        {
+          "name": "Newcastle 蜜蜂友善候車亭",
+          "architect": "Newcastle City Council / Clear Channel",
+          "location": "新堡, 英國",
+          "year": 2023,
+          "elements": "野花與景天科綠屋頂(living roof);支持授粉昆蟲;結合雨水滯蓄與降溫。",
+          "concept": "延續歐洲「生態候車亭」風潮,新堡為候車亭鋪上野花綠屋頂,把零散的交通設施串成城市裡的微型授粉廊道。小小的屋頂在都市中提供蜜蜂與蝴蝶的踏腳石,同時滯蓄雨水、緩解熱島,證明最不起眼的基礎設施也能成為生態網絡的一環。",
+          "url": "https://www.archdaily.com/tag/green-roof",
+          "img": "https://www.wallbarn.com/wp-content/uploads/2022/11/bee-bus-stop-green-roof-Brighton-Sept-22.jpg"
+        },
+        {
+          "name": "Spacelab「Zero」能源自給候車所",
+          "architect": "Spacelab",
+          "location": "義大利",
+          "year": 2021,
+          "elements": "屋面光電板搭配電池儲能;熱泵與水循環調溫;植物淨化(phyto-purification)系統;模組化、可拆解(designed for disassembly)、可重複組裝。",
+          "concept": "一座能源自給的實驗性遮蔽所:光電板與電池供電、熱泵與水循環調節溫度、植物淨化系統處理水資源,整體採可拆解的模組設計,能以不同配置組裝、搬遷與再利用。它把候車與停留空間推向「零耗能、可循環」的極致,示範即使是微型公共設施,也能自成一套低碳能源系統。",
+          "url": "https://www.archdaily.com/969647/spacelabs-experimental-shelter-is-energy-self-sufficient-and-designed-for-disassembly",
+          "img": "https://images.adsttc.com/media/images/615c/a47f/1248/3401/6477/b9d4/medium_jpg/spacelab-zero-sping-lake-01-1024x576.jpg?1633461378"
+        }
+      ]
+    },
+    {
+      "id": "art",
+      "name": "藝術裝置 / 極簡型",
+      "color": "#8a5a9e",
+      "intro": "把候車亭當作前衛藝術與結構實驗的舞台。或以雕塑性的造型製造話題與打卡點,或以極簡、輕薄的構築追求純粹。奧地利 Krumbach 邀集世界級建築師打造的四座站牌,正是此類的代表。",
+      "cases": [
+        {
+          "name": "向上走的等待",
+          "architect": "藤本壯介 Sou Fujimoto",
+          "location": "克魯姆巴赫, 奧地利",
+          "year": 2014,
+          "elements": "由纖細白色鋼桿構成、向上層層攀升的螺旋階梯狀結構;通透、無實牆;可登高遠眺。",
+          "concept": "藤本壯介以叢生的纖細鋼桿,打造一座彷彿向天空生長的「樓梯森林」。候車不再只是水平地停留,而是被邀請向上攀登、登高俯瞰村落與山景。結構通透得幾乎消融於空氣中,把「等待」轉化為一種垂直的、充滿好奇的空間體驗,模糊了候車亭、雕塑與觀景台的界線。",
+          "url": "https://www.archdaily.com/506961/bus-stop-unveils-7-unusual-bus-shelters-by-world-class-architects",
+          "img": "https://images.adsttc.com/media/images/5374/a35d/c07a/8010/2500/00a4/medium_jpg/_DSC6741.jpg?1400152910"
+        },
+        {
+          "name": "玻璃亭裡的日常",
+          "architect": "斯米揚·拉迪奇 Smiljan Radić",
+          "location": "克魯姆巴赫, 奧地利",
+          "year": 2014,
+          "elements": "通透的玻璃盒子包覆內部空間;內置簡單座椅;以玻璃界定卻不封閉視線。",
+          "concept": "拉迪奇用一只通透的玻璃亭,把候車的日常框成一幅安靜的風景。玻璃讓內外視線彼此穿透,等車的人既被庇護、又始終與周遭的村落地景保持連結。簡潔的盒子在田園背景中顯得既日常又疏離,以最低限的介入,讓平凡的等待獲得一種被凝視的儀式感。",
+          "url": "https://www.archdaily.com/506961/bus-stop-unveils-7-unusual-bus-shelters-by-world-class-architects",
+          "img": "https://images.adsttc.com/media/images/5374/a236/c07a/806f/5b00/00a0/medium_jpg/_DSC6577.jpg?1400152612"
+        },
+        {
+          "name": "鳥也可以穿過的塔",
+          "architect": "亞歷山大·布羅斯基 Alexander Brodsky",
+          "location": "克魯姆巴赫, 奧地利",
+          "year": 2014,
+          "elements": "深色木構打造的高聳塔狀小屋;內部設樓梯通往上層小室;開口讓視線(與鳥)穿越。",
+          "concept": "布羅斯基以一座帶有俄羅斯鄉間與紙上建築氣質的深色木塔,顛覆候車亭的水平日常。沿樓梯登上塔頂的小室,可在等車時獲得一處遠離地面的安靜角落;塔身的開口讓光、風與鳥自由穿越。它像一件帶著詩意與荒誕的裝置,把「等待」變成一場登塔的小小冒險。",
+          "url": "https://www.archdaily.com/506961/bus-stop-unveils-7-unusual-bus-shelters-by-world-class-architects",
+          "img": "https://images.adsttc.com/media/images/5374/a087/c07a/8010/2500/009e/medium_jpg/_DSC6931.jpg?1400152180"
+        },
+        {
+          "name": "候車亭作為暗箱",
+          "architect": "業餘建築工作室 / 王澍 Wang Shu",
+          "location": "克魯姆巴赫, 奧地利",
+          "year": 2014,
+          "elements": "封閉的木盒空間內設小孔,如照相機暗箱(camera obscura);把外部景象投影到內壁。",
+          "concept": "王澍與業餘建築工作室把候車亭設計成一具「暗箱」:封閉的木構空間透過小孔,將外面的村落與山景倒映、投影到內牆上。等車的人走入其中,看到的不是直接的風景,而是被光學轉化後的影像,藉此重新觀看習以為常的環境。它把最日常的等待,變成一場關於觀看與感知的詩意實驗。",
+          "url": "https://www.archdaily.com/506961/bus-stop-unveils-7-unusual-bus-shelters-by-world-class-architects",
+          "img": "https://images.adsttc.com/media/images/5374/a282/c07a/806f/5b00/00a2/medium_jpg/_DSC6822.jpg?1400152682"
+        },
+        {
+          "name": "Bus Shelter 極簡原型",
+          "architect": "Pearce Brinkley Cease + Lee",
+          "location": "羅利, 美國",
+          "year": 2007,
+          "elements": "可量產的候車亭原型;極簡而精煉的鋼結構;曾獲 2008 AIA 全國小型構造獎。",
+          "concept": "以「原型」的思維設計候車亭,用最精煉、最少的結構元素提供遮蔽,追求純粹而不矯飾的美。它證明即使是小尺度、可複製的公共設施,也能透過嚴謹的比例與細節達到高度的設計品質,是極簡路線在候車亭上的典範。",
+          "url": "https://www.archdaily.com/189872/bus-shelter-pearce-brinkley-cease-lee",
+          "img": "https://images.adsttc.com/media/images/5016/f0ee/28ba/0d23/5b00/0597/medium_jpg/stringio.jpg?1361421928"
+        }
+      ]
+    },
+    {
+      "id": "basic",
+      "name": "基礎型",
+      "color": "#b8b3a8",
+      "intro": "台南常見的電線桿式站牌或無遮蔽的基本站位。僅有立牌或最小遮蔽,缺乏設計著墨。雖然最不起眼,卻是數量最多、最貼近多數人日常的公車停靠點,作為對照組納入盤點。",
+      "cases": []
+    }
+  ]
+}
