@@ -171,8 +171,11 @@ var _lf=document.getElementById("loadFile"); if(_lf) _lf.onchange=e=>{const f=e.
 fetch("stations.json").then(r=>r.json()).then(d=>{const by={};(d.stations||d).forEach(s=>by[s.id]=s);
   STATIONS.forEach(s=>{if(by[s.id]){const v=by[s.id];if(v.cats)s.cats=v.cats;else if(v.category)s.cats=[v.category];if(v.elements)s.elements=v.elements;if(v.img)s.img=v.img;}});paint();}).catch(()=>{});
 const q=new URLSearchParams(location.search);paint();
+var _dl=q.get("stop")||q.get("district")||q.get("cat");
+if(_dl){var _cv2=document.getElementById("cover");if(_cv2)_cv2.style.display="none";}
 if(q.get("district")&&DISTRICTS.find(d=>d.name===q.get("district")))focus(q.get("district"));
 if(q.get("cat")&&CATMAP[q.get("cat")])openCat(q.get("cat"));
+if(q.get("stop")){var _s=STATIONS.find(x=>x.id===q.get("stop")||x.name===q.get("stop"));if(_s){if(_s.district)focus(_s.district);setTimeout(function(){openStation(_s);},350);}}
 var _cv=document.getElementById("cover");
 document.getElementById("enterBtn").onclick=function(){_cv.classList.add("hide");setTimeout(function(){_cv.style.display="none";},650);};
 (function(){var cbg=document.getElementById("cbg");var L=["cover.jpg","cover.png","cover.jpeg","cover.JPG","cover.PNG"];var i=0;cbg.onerror=function(){i++;if(i<L.length)cbg.src=L[i];else cbg.style.display="none";};cbg.src=L[0];})();
