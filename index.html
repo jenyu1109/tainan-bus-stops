@@ -21,8 +21,8 @@ body{background:radial-gradient(circle at 50% 28%,#e9dfca,#cdc2a9);}
 #reset{margin-top:10px;width:100%;font-family:inherit;font-size:12px;border:1px solid var(--line);background:#fff;border-radius:7px;padding:6px;cursor:pointer;}#reset:hover{background:#f0ece1;}
 .loadrow{margin-top:8px;font-size:11px;color:var(--muted);}.loadrow label{color:#4a6fa5;cursor:pointer;text-decoration:underline;}
 /* big panel */
-#panel{width:0;background:linear-gradient(180deg,#fffdf8,#fbf6ec);border-left:1px solid var(--line);overflow-y:auto;transition:width .5s cubic-bezier(.2,.7,.2,1);z-index:600;perspective:1600px;box-shadow:inset 16px 0 26px -16px #00000033,-10px 0 26px #00000014;}
-#panel.open{width:52vw;min-width:460px;}#panel .inner{padding:0 0 28px;}
+#panel{width:0;background:#e9e0cd;border-left:1px solid #d3c8b1;overflow-y:auto;transition:width .5s cubic-bezier(.2,.7,.2,1);z-index:600;perspective:1600px;padding:12px;box-shadow:inset 18px 0 28px -18px #00000033,-10px 0 26px #00000014;}
+#panel.open{width:52vw;min-width:460px;}#panel .inner{padding:0 0 28px;position:relative;background:linear-gradient(180deg,#fffdf8,#fbf6ec);border-radius:13px;overflow:hidden;box-shadow:0 7px 20px #0000001f,inset 0 0 0 1px #ece4d2;min-height:calc(100% - 0px);}
 #panel .pad{padding:0 30px;}
 #panel .close{position:absolute;right:18px;top:14px;border:none;background:#fff8;border-radius:50%;width:34px;height:34px;font-size:20px;cursor:pointer;color:#444;z-index:5;}
 #artbanner{width:100%;height:160px;background:#f4f1ea;display:block;position:relative;}
