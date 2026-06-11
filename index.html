@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-Hant"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>台南公車亭類型地圖｜中西區·北區·東區</title>
+<title>台南公車亭圖鑑｜城市中的等待空間</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
 <style>
 :root{--bg:#f4f1ea;--ink:#2b2b2b;--panel:#fffdf8;--line:#e3ddcf;--muted:#8a8275;}
 *{box-sizing:border-box;}html,body{margin:0;height:100%;font-family:"Noto Sans TC","PingFang TC",sans-serif;color:var(--ink);}
-#app{display:flex;height:100%;overflow:hidden;}#map{flex:1;background:#eceadf;}
+#app{display:flex;height:100%;overflow:hidden;background:#c7bfae;position:relative;}#map{flex:1;background:#eceadf;margin:16px;border-radius:10px;overflow:hidden;box-shadow:0 24px 60px -14px #00000059,0 0 0 7px #fffdf8,0 0 0 8px #0000000f;}
 #ctrl{position:absolute;top:12px;left:12px;z-index:600;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;width:236px;box-shadow:0 4px 18px #0001;}
 #ctrl h1{font-size:16px;margin:0 0 2px;}#ctrl .sub{font-size:11px;color:var(--muted);margin-bottom:10px;line-height:1.5;}
 .districts{display:flex;flex-direction:column;gap:6px;margin-bottom:12px;}
@@ -20,7 +20,7 @@
 #reset{margin-top:10px;width:100%;font-family:inherit;font-size:12px;border:1px solid var(--line);background:#fff;border-radius:7px;padding:6px;cursor:pointer;}#reset:hover{background:#f0ece1;}
 .loadrow{margin-top:8px;font-size:11px;color:var(--muted);}.loadrow label{color:#4a6fa5;cursor:pointer;text-decoration:underline;}
 /* big panel */
-#panel{width:0;background:var(--panel);border-left:1px solid var(--line);overflow-y:auto;transition:width .28s;z-index:600;}
+#panel{width:0;background:linear-gradient(180deg,#fffdf8,#fbf6ec);border-left:1px solid var(--line);overflow-y:auto;transition:width .28s;z-index:600;perspective:1600px;box-shadow:inset 16px 0 26px -16px #00000033,-10px 0 26px #00000014;}
 #panel.open{width:52vw;min-width:460px;}#panel .inner{padding:0 0 28px;}
 #panel .pad{padding:0 30px;}
 #panel .close{position:absolute;right:18px;top:14px;border:none;background:#fff8;border-radius:50%;width:34px;height:34px;font-size:20px;cursor:pointer;color:#444;z-index:5;}
@@ -74,15 +74,22 @@
   #cover .cblock{margin:0 16px;padding:30px 26px;max-width:none;}
   #cover .ctitle{letter-spacing:1px;}
 }
+
+#cover{transition:opacity 1s ease,transform 1.15s ease;transform-origin:left center;}
+#cover.hide{transform:perspective(1600px) rotateY(-105deg);}
+@keyframes pageflip{0%{transform:rotateY(-46deg) translateX(-8%);opacity:0;}55%{opacity:1;}100%{transform:rotateY(0) translateX(0);opacity:1;}}
+#panel .inner{transform-origin:left center;transform-style:preserve-3d;}
+#panel .inner.flipping{animation:pageflip .9s cubic-bezier(.22,.61,.21,1);backface-visibility:hidden;}
+.dexno{font-family:"Lora",Georgia,serif;font-size:12px;letter-spacing:3px;color:#b08a3a;margin:2px 0 0;text-transform:uppercase;}
 </style></head><body>
 <div id="cover"><img id="cbg" alt=""><div class="cblock">
-<h1 class="ctitle">城市中的等待空間</h1>
-<p class="csub">公車亭的地方與公共觀察</p>
+<h1 class="ctitle">台南公車亭圖鑑</h1>
+<p class="csub">城市中的等待空間</p>
 <p class="cmeta">台南 · 中西區 · 北區 · 東區　|　都市美學</p>
 <button class="enter" id="enterBtn">進入地圖 →</button>
 </div></div>
 <div id="app"><div id="map"></div>
-<div id="ctrl"><h1>台南公車亭類型地圖</h1>
+<div id="ctrl"><h1>台南公車亭圖鑑</h1>
 <div class="sub">都市美學 · 公車亭｜中西 · 北 · 東區。點行政區聚焦,點站點看分類,點分類看案例。</div>
 <div class="districts" id="districts"></div>
 <div class="legend"><div class="lt">分類圖例(可勾選顯示)</div><div id="legend"></div></div>
@@ -152,6 +159,7 @@ const un=document.createElement("label");un.className="litem";
 un.innerHTML=`<input type="checkbox" checked><span class="dot" style="background:${UNCLASS.color}"></span><span>未分類</span>`;
 un.querySelector("input").onchange=e=>{hidden["__un"]=!e.target.checked;paint();};lwrap.appendChild(un);
 const panel=document.getElementById("panel"),pInner=document.getElementById("panelInner");
+function flipPanel(){pInner.classList.remove("flipping");void pInner.offsetWidth;pInner.classList.add("flipping");}
 // ---- generative art banner (Civic Drift) ----
 function hashStr(str){let h=2166136261;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619);}return h>>>0;}
 function hexRgb(h){h=h.replace('#','');return [parseInt(h.substr(0,2),16),parseInt(h.substr(2,2),16),parseInt(h.substr(4,2),16)];}
@@ -167,22 +175,23 @@ function genArt(seedStr,hex){const el=document.getElementById("artbanner");if(!e
   };},el);}
 function catChips(cs){if(!cs.length)return `<span class="ctag" style="background:${UNCLASS.color};cursor:default">未分類</span>`;
   return cs.map(id=>{const c=CATMAP[id]||UNCLASS;return `<span class="ctag" style="background:${c.color}" onclick="openCat('${id}')">${c.name} ›</span>`;}).join("");}
-function openStation(s){const cs=getCats(s);const pc=primaryColor(s);
+function openStation(s){const cs=getCats(s);const pc=primaryColor(s);const _no=String(STATIONS.indexOf(s)+1).padStart(3,"0");
   pInner.innerHTML=`<button class="close" onclick="closePanel()">×</button><div id="artbanner"></div><div class="pad">
+    <div class="dexno">台南公車亭圖鑑 · No.${_no}</div>
     <h2>${s.name}<span class="pdist">${s.district}</span></h2>
     <div style="margin:10px 0 4px">${catChips(cs)}</div>
     <div class="elemcard" style="border-left-color:${pc}"><div class="eh">元素 ｜ 與周邊關係</div><p>${s.elements?s.elements:'<span style="color:#aaa">尚未填寫,可在辨識工具中補充。</span>'}</p></div>
     ${s.img?`<div class="simg" style="background-image:url('${s.img}')"></div>`:`<div class="simg">街景圖(辨識工具填金鑰後擷取)</div>`}
   </div>`;
-  panel.classList.add("open");setTimeout(()=>genArt(s.id||s.name,pc),340);}
+  panel.classList.add("open");flipPanel();setTimeout(()=>genArt(s.id||s.name,pc),340);}
 function openCat(id){const c=CATMAP[id];if(!c)return;
   let cs=(c.cases||[]).map((x,i)=>`<div class="caseCard" onclick="openCase('${id}',${i})"><div class="ci" ${x.img?`style="background-image:url('${x.img}')"`:""}>${x.img?"":"插圖"}</div><div class="cb"><div class="cn">${x.name}</div><div class="ca">${x.architect}<br>${x.location} · ${x.year}</div></div></div>`).join("");
   if(!c.cases||!c.cases.length)cs=`<div class="ca" style="color:#aaa">此類為對照組,無國際案例。</div>`;
-  pInner.innerHTML=`<button class="close" onclick="closePanel()">×</button><div id="artbanner"></div><div class="pad"><span class="ctag" style="background:${c.color};cursor:default">${c.name}</span><div class="intro">${c.intro}</div><div class="caseList">${cs}</div></div>`;
-  panel.classList.add("open");setTimeout(()=>genArt("cat_"+id,c.color),340);}
+  pInner.innerHTML=`<button class="close" onclick="closePanel()">×</button><div id="artbanner"></div><div class="pad"><div class="dexno">分類圖鑑</div><span class="ctag" style="background:${c.color};cursor:default">${c.name}</span><div class="intro">${c.intro}</div><div class="caseList">${cs}</div></div>`;
+  panel.classList.add("open");flipPanel();setTimeout(()=>genArt("cat_"+id,c.color),340);}
 function openCase(cid,i){const c=CATMAP[cid],x=c.cases[i];
   pInner.innerHTML=`<button class="close" onclick="closePanel()">×</button><div class="pad"><button class="backbtn" onclick="openCat('${cid}')">‹ 返回 ${c.name}</button><div class="simg" ${x.img?`style="background-image:url('${x.img}')"`:""}>${x.img?"":"案例插圖(可換 Nano Banana)"}</div><span class="ctag" style="background:${c.color};cursor:default">${c.name}</span><h2 style="font-size:24px">${x.name}</h2><p style="color:#8a8275">${x.architect}　|　${x.location}　|　${x.year}</p><div class="lab">設計元素</div><p class="intro">${x.elements}</p><div class="lab">設計理念</div><p class="intro">${x.concept}</p><p style="margin-top:14px"><a href="${x.url}" target="_blank" rel="noopener">↗ ArchDaily 原始頁面</a></p></div>`;
-  panel.classList.add("open");}
+  panel.classList.add("open");flipPanel();}
 function closePanel(){panel.classList.remove("open");if(artInstance){artInstance.remove();artInstance=null;}}
 window.openCat=openCat;window.openCase=openCase;window.closePanel=closePanel;window.openStation=openStation;
 var _lf=document.getElementById("loadFile"); if(_lf) _lf.onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();
@@ -194,7 +203,8 @@ fetch("stations.json").then(r=>r.json()).then(d=>{const by={};(d.stations||d).fo
 paint();
 function applyDeepLink(){var q=new URLSearchParams(location.search);if(q.get("district")&&DISTRICTS.find(d=>d.name===q.get("district")))focus(q.get("district"));if(q.get("cat")&&CATMAP[q.get("cat")])openCat(q.get("cat"));if(q.get("stop")){var s=STATIONS.find(x=>x.id===q.get("stop")||x.name===q.get("stop"));if(s){if(s.district)focus(s.district);setTimeout(function(){openStation(s);},300);}}}
 var _cv=document.getElementById("cover");
-document.getElementById("enterBtn").onclick=function(){_cv.classList.add("hide");setTimeout(function(){_cv.style.display="none";applyDeepLink();},650);};
+document.getElementById("enterBtn").onclick=function(){_cv.classList.add("hide");setTimeout(function(){_cv.style.display="none";applyDeepLink();},1150);};
 (function(){var ctrl=document.getElementById("ctrl");if(ctrl){var hh=ctrl.querySelector("h1");var mq=window.matchMedia("(max-width:680px)");if(mq.matches)ctrl.classList.add("collapsed");if(mq.matches){try{map.zoomControl.setPosition("bottomleft");}catch(e){}}if(hh)hh.addEventListener("click",function(){if(mq.matches)ctrl.classList.toggle("collapsed");});}})();
 (function(){var cbg=document.getElementById("cbg");var L=["cover.jpg","cover.png","cover.jpeg","cover.JPG","cover.PNG"];var i=0;cbg.onerror=function(){i++;if(i<L.length)cbg.src=L[i];else cbg.style.display="none";};cbg.src=L[0];})();
+setTimeout(function(){try{map.invalidateSize();}catch(e){}},350);window.addEventListener('resize',function(){try{map.invalidateSize();}catch(e){}});
 </script></body></html>
